@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface GuestLayoutProps {
   children: React.ReactNode;
@@ -9,11 +10,10 @@ function GuestLayout({ children }: GuestLayoutProps) {
     <div className="guest-layout">
       <header className="guest-header">
         <nav>
-          {/* Add navigation for guest users */}
           <div className="nav-brand">My App</div>
           <div className="nav-links">
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
           </div>
         </nav>
       </header>
